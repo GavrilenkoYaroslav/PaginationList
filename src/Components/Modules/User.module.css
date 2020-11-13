@@ -1,0 +1,18 @@
+.user {
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+    transition: 0.5s;
+}
+
+.user:hover {
+    background-color: lavender;
+    padding-right: 20px;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.description {
+    min-height: 70px;
+}
