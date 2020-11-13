@@ -11,9 +11,7 @@ const App = (props) => {
     return (
         <BrowserRouter>
 
-                <div>
-               <img src={backgound} alt={''} className={styles.back}/>
-                </div>
+            <div className={styles.back } style={{background: `url(${backgound}) no-repeat`}}>
 
             <Route exact path={'/'} render={() =>
                 <Row justify='center' align='middle' style={ {height : '100vh'} }>
@@ -27,7 +25,7 @@ const App = (props) => {
 
             <Route exact path={'/users'} render={() => <UsersContainer/>}/>
 
-
+            </div>
         </BrowserRouter>
     );
 };
